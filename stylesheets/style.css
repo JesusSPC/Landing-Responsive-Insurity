@@ -90,7 +90,6 @@ header,
 .teams,
 .articles,
 .pricing,
-.testimonials,
 footer {
   display: flex;
   justify-content: center;
@@ -430,7 +429,45 @@ li {
   text-align: center;
 }
 
-.testimonials h3 {
+
+.carousel-container {
+  position: relative;
+  width: 60%;
+  max-width: 900px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.carousel-slide {
+  display: flex;
+  width: 100%;
+}
+
+.carousel-slide img {
+  width: 100%;
+}
+
+#carouselPrev {
+  position: absolute;
+  top: 45%;
+  left: 5%;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  z-index: 10;
+}
+
+#carouselNext {
+  position: absolute;
+  top: 45%;
+  right: 5%;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  z-index: 10;
+}
+
+/* .testimonials h3 {
   line-height: 3.8rem;
   font-size: 2.8rem;
   margin-bottom: 40px;
@@ -447,7 +484,7 @@ li {
 .testimonials .testimony-profession {
   font-size: 1.4rem;
   color: rgb(161, 161, 161);
-}
+} */
 
 footer {
   margin-top: 40px;
