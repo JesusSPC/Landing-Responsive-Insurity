@@ -305,6 +305,22 @@ header {
   display: none;
 }
 
+.teams {
+  position: relative;
+  padding-top: 0;
+}
+
+.moving-bg {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 40px 0;
+  background: url("../src/world.png") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position-y: 25%;
+}
+
 .card {
   padding: 20px;
   margin: 20px 0;
@@ -789,4 +805,9 @@ footer .main-logo {
     justify-content: space-between;
     align-items: center;
   }
+}
+
+
+.parallax {
+  transition: 10s cubic-bezier(0,1,.5,1);
 }
