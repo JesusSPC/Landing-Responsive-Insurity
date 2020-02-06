@@ -471,11 +471,15 @@ li {
 }
 
 .carousel-slide {
+  width: 100%;
+}
+
+.carousel-slide div {
   display: flex;
   width: 100%;
 }
 
-.carousel-slide img {
+.carousel-slide div img {
   width: 100%;
 }
 
