@@ -66,6 +66,9 @@ nav {
   align-items: center;
   padding: var(--padding-mobile);
   color: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .main-logo {
@@ -151,8 +154,9 @@ header {
   background-color: var(--dark-purple);
 }
 
-.s1-text .learn-more, .s2-text .learn-more {
-  color: var(--dark-purple)
+.s1-text .learn-more,
+.s2-text .learn-more {
+  color: var(--dark-purple);
 }
 
 .header-main {
@@ -266,6 +270,8 @@ header {
 
 .s1-slider {
   left: 25%;
+  top: -10%;
+  box-shadow: -20px 20px 20px rgba(0, 0, 0, 0.3);
   z-index: 20;
 }
 
@@ -289,12 +295,12 @@ header {
 .s2-phone {
   position: absolute;
   height: 100%;
-
   z-index: 1;
 }
 
 .s2-graph {
   position: absolute;
+  box-shadow: -20px 20px 20px rgba(0, 0, 0, 0.2);
   width: 50%;
   top: 15%;
   left: 40%;
@@ -310,7 +316,6 @@ header {
   padding-top: 0;
   width: 100%;
   overflow: hidden;
-
 }
 
 .teams .container {
@@ -330,7 +335,7 @@ header {
 }
 
 .articles .card {
-  box-shadow: -13px 13px 20px 0px rgba(0,0,0,0.6)
+  box-shadow: -13px 13px 20px rgba(0, 0, 0, 0.1);
 }
 
 .card {
@@ -456,7 +461,6 @@ li {
 .testimonials {
   text-align: center;
 }
-
 
 .carousel-container {
   position: relative;
@@ -639,6 +643,21 @@ footer .main-logo {
 
   .customers .s2-phone {
     height: 700px;
+    top: 100%;
+  }
+
+  .customers .s2-phone-move {
+    transition: 2.5s ease;
+    margin-top: -100%;
+  }
+
+  .customers .s2-graph {
+    top: 100%;
+  }
+
+  .customers .s2-graph-move {
+    transition: 2.5s ease-in-out;
+    margin-top: -85%;
   }
 
   .precision .container > div:nth-child(1) {
@@ -651,6 +670,11 @@ footer .main-logo {
 
   .learn-more {
     display: initial;
+  }
+
+  .teams {
+    box-shadow: inset 0px 50px 25px -30px rgba(0,0,0,0.15)
+
   }
 
   .customers .container {
@@ -688,11 +712,11 @@ footer .main-logo {
     margin: 0 20px;
   }
 
-  .pricing .basic .table-details{
+  .pricing .basic .table-details {
     height: 391px;
   }
 
-  .pricing .premium .table-details{
+  .pricing .premium .table-details {
     height: 393px;
   }
 
@@ -795,7 +819,7 @@ footer .main-logo {
     max-width: none;
   }
 
-  .pricing .pro .table-details{
+  .pricing .pro .table-details {
     height: 380px;
   }
 
@@ -823,7 +847,6 @@ footer .main-logo {
   }
 }
 
-
 .parallax {
-  transition: 10s cubic-bezier(0,1,.5,1);
+  transition: 10s cubic-bezier(0, 1, 0.5, 1);
 }

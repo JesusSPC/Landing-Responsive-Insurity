@@ -1,4 +1,7 @@
 const parallaxElements = document.querySelectorAll(".parallax");
+const phoneSection = document.querySelector(".customers")
+const phone = document.querySelector(".s2-phone");
+const phoneGraph = document.querySelector(".s2-graph");
 const teamsSection = document.querySelector(".teams");
 const teamsBackground = document.querySelector(".moving-bg img");
 
@@ -27,5 +30,10 @@ function apply2DEffects() {
 
     element.style.transform = `translate(${speedHorizontal}px, ${speedVertical}px)`;
   });
+
+  if (phoneSection.getBoundingClientRect().top < window.innerHeight){
+    phone.classList.add('s2-phone-move')
+    phoneGraph.classList.add('s2-graph-move')
+  }
 }
 
