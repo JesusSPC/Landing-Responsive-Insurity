@@ -118,6 +118,8 @@ header {
   padding-top: 40px;
   color: white;
   padding-bottom: 30px;
+  overflow: hidden;
+
 }
 
 .title {
@@ -172,9 +174,10 @@ header {
 }
 
 .header-polygon {
-  width: 50%;
+  width: 60%;
   position: absolute;
-  top: 5%;
+  top: 20%;
+  /* filter: blur(20px); */
   z-index: 1;
 }
 
@@ -325,7 +328,6 @@ header {
 .teams .container {
   padding: 40px;
   z-index: 10;
-
 }
 
 .moving-bg {
@@ -469,9 +471,7 @@ li {
 
 .carousel-container {
   position: relative;
-  width: 60%;
-  max-width: 900px;
-  margin: 0 auto;
+  width: 100%;
   overflow: hidden;
 }
 
@@ -487,14 +487,24 @@ li {
 
 .carousel-slide div img {
   width: 100%;
+  opacity: 0%;
 }
 
-.carousel-slide div div{
+.carousel-slide div div {
   position: absolute;
-  width: 70%;
+  width: 80%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.carousel-slide div .carousel-screen {
+  width: 100%;
+  z-index: 10;
+}
+
+.carousel-slide div .carousel-text {
+  z-index: 20;
 }
 
 #carouselPrev {
@@ -502,7 +512,7 @@ li {
   top: 45%;
   left: 5%;
   font-size: 30px;
-  color: white;
+  color: var(--dark-grey);
   cursor: pointer;
   z-index: 10;
 }
@@ -512,20 +522,19 @@ li {
   top: 45%;
   right: 5%;
   font-size: 30px;
-  color: white;
+  color: var(--dark-grey);
   cursor: pointer;
   z-index: 10;
 }
 
 .testimonials h3 {
-  line-height: 3.8rem;
-  font-size: 2.8rem;
-  margin-bottom: 40px;
+  line-height: 2.8rem;
+  font-size: 2rem;
+  margin-bottom: 10%;
 }
 
 .testimonials .testimony-person {
   font-family: "Inter-Medium";
-  line-height: 2.4rem;
   letter-spacing: -0.09rem;
   font-size: 2.4rem;
   margin-bottom: 5px;
@@ -571,9 +580,9 @@ footer .main-logo {
   }
 
   .header-polygon {
-    width: 70%;
+    width: 75%;
     position: absolute;
-    top: 15%;
+    top: 20%;
     left: -10%;
     z-index: 1;
   }
@@ -582,12 +591,64 @@ footer .main-logo {
     width: 100%;
     position: absolute;
     top: 20%;
+    left: -5%;
     z-index: 10;
+  }
+
+  .carousel-slide div img {
+    width: 100%;
+  }
+
+  .carousel-text {
+    position: absolute;
+    width: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 
 .moving-bg img {
   display: block;
+}
+
+@media (min-width: 720px) {
+  .carousel-slide div img {
+    opacity: 40%;
+    z-index: 1;
+  }
+
+  .carousel-screen {
+    background-color: black;
+    opacity: 25%;
+    z-index: 10;
+    height: 100%;
+  }
+
+
+  .testimonials h3 {
+    line-height: 3.8rem;
+    font-size: 2.6rem;
+    color: white;
+
+  }
+  
+  .testimonials .testimony-person {
+    font-family: "Inter-Medium";
+    letter-spacing: -0.09rem;
+    font-size: 3.8rem;
+    margin-bottom: 5px;
+    color: white;
+  }
+  
+  .testimonials .testimony-profession {
+    font-size: 2.4rem;
+    color: white;
+  }
+
+  #carouselNext, #carouselPrev {
+    color: white;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -608,21 +669,22 @@ footer .main-logo {
 
   .header-design {
     overflow: visible;
+    height: 580px;
   }
 
   .header-polygon {
-    width: 70%;
+    width: 80%;
     position: absolute;
-    top: 10%;
-    left: -15%;
+    top: 15%;
+    left: -30%;
     z-index: 1;
   }
 
   .header-img {
-    width: 100%;
+    width: 130%;
     position: absolute;
-    top: 20%;
-    left: 15%;
+    top: 5%;
+    /* left: 15%; */
     z-index: 10;
   }
 
@@ -691,8 +753,7 @@ footer .main-logo {
   }
 
   .teams {
-    box-shadow: inset 0px 50px 25px -30px rgba(0,0,0,0.15)
-
+    box-shadow: inset 0px 50px 25px -30px rgba(0, 0, 0, 0.15);
   }
 
   .customers .container {
@@ -741,6 +802,12 @@ footer .main-logo {
   .pricing .basic,
   .premium {
     height: 525px;
+  }
+
+  .carousel-container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
   }
 }
 
@@ -800,21 +867,22 @@ footer .main-logo {
   .header-design {
     width: 500px;
     padding: 0;
-    padding-bottom: 140px;
+    padding-bottom: 200px;
   }
 
   .header-polygon {
-    width: 50%;
+    width: 70%;
     position: absolute;
-    top: 35%;
-    left: -7%;
+    top: 15%;
+    left: -40%;
     z-index: 1;
   }
 
   .header-img {
-    width: 90%;
+    width: 140%;
     position: absolute;
     top: 0;
+    left: -40%;
     z-index: 10;
   }
 
