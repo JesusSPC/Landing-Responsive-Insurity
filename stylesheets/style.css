@@ -2,7 +2,7 @@
   --light-purple: #5361f5;
   --dark-purple: #4353ff;
   --dark-grey: #232432;
-  --grey-bg: #f8f8f8;
+  --grey-bg: #f3f3f3;
   --padding-mobile: 0 30px;
 }
 
@@ -316,11 +316,16 @@ header {
   padding-top: 0;
   width: 100%;
   overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.1);
+  background-image: url("../src/world.png");
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .teams .container {
   padding: 40px;
   z-index: 10;
+
 }
 
 .moving-bg {
@@ -471,16 +476,25 @@ li {
 }
 
 .carousel-slide {
-  width: 100%;
+  display: flex;
+  width: 600%;
 }
 
 .carousel-slide div {
-  display: flex;
+  position: relative;
   width: 100%;
 }
 
 .carousel-slide div img {
   width: 100%;
+}
+
+.carousel-slide div div{
+  position: absolute;
+  width: 70%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 #carouselPrev {
@@ -503,7 +517,7 @@ li {
   z-index: 10;
 }
 
-/* .testimonials h3 {
+.testimonials h3 {
   line-height: 3.8rem;
   font-size: 2.8rem;
   margin-bottom: 40px;
@@ -520,7 +534,7 @@ li {
 .testimonials .testimony-profession {
   font-size: 1.4rem;
   color: rgb(161, 161, 161);
-} */
+}
 
 footer {
   margin-top: 40px;
@@ -823,8 +837,12 @@ footer .main-logo {
     max-width: none;
   }
 
+  .pricing .pro {
+    height: 572px;
+  }
+
   .pricing .pro .table-details {
-    height: 380px;
+    height: 390px;
   }
 
   footer {
