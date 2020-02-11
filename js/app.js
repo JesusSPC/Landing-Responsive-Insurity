@@ -11,7 +11,6 @@ const headerPolygon = document.querySelector(".header-polygon");
 const headerImg = document.querySelector(".header-img");
 const phone = document.querySelector(".s2-phone");
 const phoneGraph = document.querySelector(".s2-graph");
-const teamsBackground = document.querySelector(".moving-bg img");
 
 let speedVertical,
   speedHorizontal = 0;

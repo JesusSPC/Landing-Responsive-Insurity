@@ -1,380 +1,427 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Moobox</title>
+    <script src="https://kit.fontawesome.com/c8291b9e23.js" crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./stylesheets/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Document</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-  <link rel="stylesheet" href="./stylesheets/style.css" />
-</head>
-
-<body>
-  <nav class="flex">
-    <p class="main-logo">moobox</p>
-    <div class="nav-menu flex">
-      <ul>
-        <li>About</li>
-        <li>Blog</li>
-        <li>Pricing</li>
-        <li>Customer Support</li>
-      </ul>
-      <div class="nav-button">
-        <button class="nav-burger flex">
-          <img src="/src/nav-burger.svg" alt="Menu" />
-        </button>
-        <button class="nav-client-area button">Client Area</button>
-      </div>
-    </div>
-  </nav>
-  <header>
-    <div class="container">
-      <div class="header-description">
-        <div class="header-main">
-          <h1 class="title">Change your place. Change your life.</h1>
-          <p class="little-paragraph">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit quisque.
-          </p>
-          <button class="button button-orange">Get Started</button>
-        </div>
-        <div class="header-design">
-          <img class="header-polygon" src="/src/Polygon-1.svg" alt="Header image" />
-          <img class="header-img" src="/src/header-pic.png" alt="Header image" />
-        </div>
-      </div>
-      <div class="header-description flex">
-        <div class="header-info flex">
-          <div class="header-icon flex">
-            <i class="material-icons">query_builder</i>
-          </div>
-          <div class="info-title">
-            <h3>Commitment in 24h</h3>
-            <p class="little-paragraph">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit quisque
-              elementum
-            </p>
-          </div>
-        </div>
-        <div class="header-info flex">
-          <div class="header-icon flex">
-            <i class="material-icons">house</i>
-          </div>
-          <div class="info-title">
-            <h3>Owners and tenants</h3>
-            <p class="little-paragraph">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit quisque
-              elementum
-            </p>
-          </div>
-        </div>
-        <div class="header-info flex">
-          <div class="header-icon flex">
-            <i class="material-icons">insert_emoticon</i>
-          </div>
-          <div class="info-title">
-            <h3>Customer privacy</h3>
-            <p class="little-paragraph">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit quisque
-              elementum
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
-  <section class="underheader whitebg">
-    <div class="container">
-      <div>
-        <h2>
-          We work with some of the world's most successful companies
-        </h2>
-        <div class="associateds">
-          <img class="ass-logo" src="/src/logo-estamosseguros.png" alt="" />
-          <img class="ass-logo websa100" src="/src/logo-websa100.png" alt="" />
-          <img class="ass-logo" src="/src/logo-estamosseguros.png" alt="" />
-          <img class="ass-logo" src="/src/logo-aecc.png" alt="" />
-        </div>
-        <a class="section-link" href="#">Read Customer Stories</a>
-      </div>
-      <div class="line"></div>
-    </div>
-  </section>
-  <section class="precision whitebg">
-    <div class="container">
-      <div>
-        <p class="section-name">01</p>
-        <div class="s1-text">
-          <h2>Control every detail in the process</h2>
-          <h4>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Curabitor
-            faucibus sapien bibendum, pulvinar libero.
-          </h4>
-          <button class="learn-more button">Learn More</button>
-        </div>
-      </div>
-      <div class="s1-design">
-        <img class="s1-design-size s1-slider parallax" data-direction="vertical" data-speed="0.2" src="/src/Group.png"
-          alt="Group" />
-        <img class="s1-design-size s1-rectangle" src="/src/Rectangle.png" alt="Rectangle" />
-        <img class="s1-design-size s1-recipient parallax" data-direction="horizontal" data-speed="-0.03"
-          src="/src/Gift.png" alt="Gift" />
-      </div>
-    </div>
-  </section>
-  <section class="customers grey-bg">
-    <div class="bottom-shadow"></div>
-    <div class="container">
-      <div>
-        <p class="section-name">02</p>
-        <div class="s2-text">
-          <h2>Help your customers and your team</h2>
-          <h4>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Curabitor
-            faucibus sapien bibendum, pulvinar libero.
-          </h4>
-          <button class="learn-more button">Learn More</button>
-        </div>
-      </div>
-      <div class="s2-design">
-        <img class="s2-phone" src="/src/phone.png" alt="Phone" />
-        <img class="s2-graph" src="/src/graph.png" alt="Graph" />
-      </div>
-    </div>
-  </section>
-  <section class="teams whitebg">
-    <div class="container">
-      <h2>Our teams are all over the globe</h2>
-      <h4>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Curabitor
-        faucibus sapien bibendum, pulvinar libero.
-      </h4>
-      <a class="section-link" href="#">Check out what each city and office has to offer</a>
-    </div>
-  </section>
-  <section class="articles grey-bg">
-    <div class="container">
-      <div class="card">
-        <p class="article-head">Articles</p>
-        <h2 class="article-title">
-          Aliquam finibus turpis sed diam pos placerat
-        </h2>
-        <h4>
-          Aenean viverra sed mi eu scelerisque. Maecenas sit amet tortor
-          porta, efficitur sem ac, tempor tellus
-        </h4>
-        <button class="button button-orange">Learn More</button>
-      </div>
-      <div class="card">
-        <p class="article-head">Articles</p>
-        <h2 class="article-title">
-          Nam auctor enim nex risus porttitos feugiat
-        </h2>
-        <h4>
-          Aenean viverra sed mi eu scelerisque. Maecenas sit amet tortor
-          porta, efficitur sem ac, tempor tellus
-        </h4>
-        <button class="button button-purple">Learn More</button>
-      </div>
-    </div>
-  </section>
-  <section class="pricing whitebg">
-    <div class="container">
-      <div class="pricing-title">
-        <p class="section-name">Pricing</p>
-        <h2>Flexible pricing for any kind of service</h2>
-      </div>
-      <div class="all-prices">
-        <div class="basic card card-price">
-          <div class="table-header flex">
-            <p>Basic</p>
-            <p class="table-price">$19/m</p>
-          </div>
-          <div class="table-details">
-            <p class="little-paragraph">
-              Go beyond email and customize your workflow
-            </p>
-            <ul class="little-paragraph">
-              <li><span class="bullet">•</span> Lorem ipsum dolor sit am</li>
-              <li><span class="bullet">•</span> Curabitur faucibus</li>
-            </ul>
-            <button class="button button-pricing">Select Plan</button>
-          </div>
-        </div>
-        <div class="pro card card-price">
-          <div class="table-discount">
-            <p>60% OFF BUSINESS CHOOSE PRO</p>
-          </div>
-          <div class="table-header flex">
-            <p>Pro</p>
-            <p class="table-price">$39/m</p>
-          </div>
-          <div class="table-details">
-            <p class="little-paragraph">
-              Go beyond email and customize your workflow
-            </p>
-            <ul class="little-paragraph">
-              <li><span class="bullet">•</span> Aenean nec finibus felis</li>
-              <li>
-                <span class="bullet">•</span>
-                Nuliam viverra lectus id elit feugiat, sit amet tincidunt odio
-              </li>
-              <li>
-                <span class="bullet">•</span> Mauris auctor nulla eu sodales
-                placerat
-              </li>
-            </ul>
-            <button class="button button-pricing">Select Plan</button>
-          </div>
-        </div>
-        <div class="premium card card-price">
-          <div class="table-header flex">
-            <p>Premium</p>
-            <p class="table-price">$59/m</p>
-          </div>
-          <div class="table-details">
-            <p class="little-paragraph">
-              Go beyond email and customize your workflow
-            </p>
-            <ul class="little-paragraph">
-              <li>
-                <span class="bullet">•</span> Etiam velit augue, commodo nec
-                viverra eget
-              </li>
-              <li>
-                <span class="bullet">•</span> Vestibulum consequat quam sed
-                lacus commodo molestie
-              </li>
-              <li>
-                <span class="bullet">•</span>
-                Duis felis sem, faucibus at molestie quis, laoreet quis mi.
-              </li>
-            </ul>
-            <button class="button button-pricing">Select Plan</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="testimonials grey-bg">
-    <p class="section-name">Testimonials</p>
-    <div class="carousel-container">
-      <i class="fas fa-chevron-left" id="carouselPrev"></i>
-      <i class="fas fa-chevron-right" id="carouselNext"></i>
-      <div class="carousel-slide">
-        <div>
-          <div class="carousel-screen">
-
-          </div>
-          <img src="./src/carousel4.png" id="lastClone" alt="" />
-          <div class="carousel-text">
-            <h3>
-              "Donec et molestie nisl. Integer sagittis enim id nisqet et pharetra.
-              Quisque lorem mauris, efficitur et enim sed, sodales vulputate neque.
-              Donec eget ornare neque.”
-            </h3>
-            <p class="testimony-person">Alan Kalaida</p>
-            <p class="testimony-profession">Product Designer</p>
-          </div>
-        </div>
-        <div>
-          <div class="carousel-screen">
-
-          </div>
-          <img src="./src/carousel1.png" alt="" />
-          <div class="carousel-text">
-            <h3>
-              "Donec et molestie nisl. Integer sagittis enim id nisqet et pharetra.
-              Quisque lorem mauris, efficitur et enim sed, sodales vulputate neque.
-              Donec eget ornare neque.”
-            </h3>
-            <p class="testimony-person">Alan Kalaida</p>
-            <p class="testimony-profession">Product Designer</p>
-          </div>
-        </div>
-        <div>
-          <div class="carousel-screen">
-
-          </div>
-          <img src="./src/carousel2.png" alt="" />
-          <div class="carousel-text">
-            <h3>
-              "Donec et molestie nisl. Integer sagittis enim id nisqet et pharetra.
-              Quisque lorem mauris, efficitur et enim sed, sodales vulputate neque.
-              Donec eget ornare neque.”
-            </h3>
-            <p class="testimony-person">Alan Kalaida</p>
-            <p class="testimony-profession">Product Designer</p>
-          </div>
-        </div>
-        <div>
-          <div class="carousel-screen">
-
-          </div>
-          <img src="./src/carousel3.png" alt="" />
-          <div class="carousel-text">
-            <h3>
-              "Donec et molestie nisl. Integer sagittis enim id nisqet et pharetra.
-              Quisque lorem mauris, efficitur et enim sed, sodales vulputate neque.
-              Donec eget ornare neque.”
-            </h3>
-            <p class="testimony-person">Alan Kalaida</p>
-            <p class="testimony-profession">Product Designer</p>
-          </div>
-        </div>
-        <div>
-          <div class="carousel-screen">
-
-          </div>
-          <img src="./src/carousel4.png" alt="" />
-          <div class="carousel-text">
-            <h3>
-              "Donec et molestie nisl. Integer sagittis enim id nisqet et pharetra.
-              Quisque lorem mauris, efficitur et enim sed, sodales vulputate neque.
-              Donec eget ornare neque.”
-            </h3>
-            <p class="testimony-person">Alan Kalaida</p>
-            <p class="testimony-profession">Product Designer</p>
-          </div>
-        </div>
-        <div>
-          <div class="carousel-screen">
-
-          </div>
-          <img src="./src/carousel1.png" id="firstClone" alt="" />
-          <div class="carousel-text">
-            <h3>
-              "Donec et molestie nisl. Integer sagittis enim id nisqet et pharetra.
-              Quisque lorem mauris, efficitur et enim sed, sodales vulputate neque.
-              Donec eget ornare neque.”
-            </h3>
-            <p class="testimony-person">Alan Kalaida</p>
-            <p class="testimony-profession">Product Designer</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer class="whitebg">
-    <div class="container">
+  <body>
+    <nav class="flex">
       <p class="main-logo">moobox</p>
-      <p class="little-paragraph">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-        faucibus sapien bibendum.
-      </p>
-      <div class="line"></div>
-      <ul class="menu-font footer-menu flex">
-        <li>Terms</li>
-        <li>Refund Policy</li>
-        <li>License</li>
-      </ul>
-    </div>
-  </footer>
-</body>
-<script src="https://kit.fontawesome.com/c8291b9e23.js" crossorigin="anonymous"></script>
-<script src="js/app.js"></script>
-<script src="js/crsl.js"></script>
+      <div class="nav-menu flex">
+        <ul>
+          <li>About</li>
+          <li>Blog</li>
+          <li>Pricing</li>
+          <li>Customer Support</li>
+        </ul>
+        <div class="nav-button">
+          <button class="nav-burger flex">
+            <img src="/src/nav-burger.svg" alt="Menu" />
+          </button>
+          <button class="nav-client-area button">Client Area</button>
+        </div>
+      </div>
+    </nav>
+    <header>
+      <div class="container">
+        <div class="header-description">
+          <div class="header-main">
+            <h1 class="title">Change your place. Change your life.</h1>
+            <p class="little-paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit quisque.
+            </p>
+            <button class="button button-orange">Get Started</button>
+          </div>
+          <div class="header-design">
+            <img
+              class="header-polygon"
+              src="/src/Polygon-1.svg"
+              alt="Header image"
+            />
+            <img
+              class="header-img"
+              src="/src/header-pic.png"
+              alt="Header image"
+            />
+          </div>
+        </div>
+        <div class="header-description flex">
+          <div class="header-info flex">
+            <div class="header-icon flex">
+              <i class="material-icons">query_builder</i>
+            </div>
+            <div class="info-title">
+              <h3>Commitment in 24h</h3>
+              <p class="little-paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit quisque
+                elementum
+              </p>
+            </div>
+          </div>
+          <div class="header-info flex">
+            <div class="header-icon flex">
+              <i class="material-icons">house</i>
+            </div>
+            <div class="info-title">
+              <h3>Owners and tenants</h3>
+              <p class="little-paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit quisque
+                elementum
+              </p>
+            </div>
+          </div>
+          <div class="header-info flex">
+            <div class="header-icon flex">
+              <i class="material-icons">insert_emoticon</i>
+            </div>
+            <div class="info-title">
+              <h3>Customer privacy</h3>
+              <p class="little-paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit quisque
+                elementum
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="underheader whitebg">
+      <div class="container">
+        <div>
+          <h2>
+            We work with some of the world's most successful companies
+          </h2>
+          <div class="associateds">
+            <img class="ass-logo" src="/src/logo-estamosseguros.png" alt="" />
+            <img
+              class="ass-logo websa100"
+              src="/src/logo-websa100.png"
+              alt=""
+            />
+            <img class="ass-logo" src="/src/logo-estamosseguros.png" alt="" />
+            <img class="ass-logo" src="/src/logo-aecc.png" alt="" />
+          </div>
+          <a class="section-link" href="#">Read Customer Stories</a>
+        </div>
+        <div class="line"></div>
+      </div>
+    </section>
+    <section class="precision whitebg">
+      <div class="container">
+        <div>
+          <p class="section-name">01</p>
+          <div class="s1-text">
+            <h2>Control every detail in the process</h2>
+            <h4>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Curabitor
+              faucibus sapien bibendum, pulvinar libero.
+            </h4>
+            <button class="learn-more button">Learn More</button>
+          </div>
+        </div>
+        <div class="s1-design">
+          <img
+            class="s1-design-size s1-slider parallax"
+            data-direction="vertical"
+            data-speed="0.2"
+            src="/src/Group.png"
+            alt="Group"
+          />
+          <img
+            class="s1-design-size s1-rectangle"
+            src="/src/Rectangle.png"
+            alt="Rectangle"
+          />
+          <img
+            class="s1-design-size s1-recipient parallax"
+            data-direction="horizontal"
+            data-speed="-0.03"
+            src="/src/Gift.png"
+            alt="Gift"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="customers grey-bg">
+      <div class="bottom-shadow"></div>
+      <div class="container">
+        <div>
+          <p class="section-name">02</p>
+          <div class="s2-text">
+            <h2>Help your customers and your team</h2>
+            <h4>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Curabitor
+              faucibus sapien bibendum, pulvinar libero.
+            </h4>
+            <button class="learn-more button">Learn More</button>
+          </div>
+        </div>
+        <div class="s2-design">
+          <img class="s2-phone" src="/src/phone.png" alt="Phone" />
+          <img class="s2-graph" src="/src/graph.png" alt="Graph" />
+        </div>
+      </div>
+    </section>
+    <section class="teams whitebg">
+      <div class="container">
+        <h2>Our teams are all over the globe</h2>
+        <h4>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Curabitor
+          faucibus sapien bibendum, pulvinar libero.
+        </h4>
+        <div class="buildings-container">
+          <div class="buildings-slider">
+            <div class="building">
+              <img src="./src/building1.png" alt="" />
 
+              <div class="building-screen"></div>
+
+            </div>
+            <div class="building">
+              <img src="./src/building2.png" alt="" />
+
+              <div class="building-screen"></div>
+
+            </div>
+            <div class="building">
+              <img src="./src/building3.jpg" alt="" />
+
+              <div class="building-screen"></div>
+
+            </div>
+          </div>
+        </div>
+        <a class="section-link" href="#"
+          >Check out what each city and office has to offer</a
+        >
+      </div>
+    </section>
+    <section class="articles grey-bg">
+      <div class="container">
+        <div class="card">
+          <p class="article-head">Articles</p>
+          <h2 class="article-title">
+            Aliquam finibus turpis sed diam pos placerat
+          </h2>
+          <h4>
+            Aenean viverra sed mi eu scelerisque. Maecenas sit amet tortor
+            porta, efficitur sem ac, tempor tellus
+          </h4>
+          <button class="button button-orange">Learn More</button>
+        </div>
+        <div class="card">
+          <p class="article-head">Articles</p>
+          <h2 class="article-title">
+            Nam auctor enim nex risus porttitos feugiat
+          </h2>
+          <h4>
+            Aenean viverra sed mi eu scelerisque. Maecenas sit amet tortor
+            porta, efficitur sem ac, tempor tellus
+          </h4>
+          <button class="button button-purple">Learn More</button>
+        </div>
+      </div>
+    </section>
+    <section class="pricing whitebg">
+      <div class="container">
+        <div class="pricing-title">
+          <p class="section-name">Pricing</p>
+          <h2>Flexible pricing for any kind of service</h2>
+        </div>
+        <div class="all-prices">
+          <div class="basic card card-price">
+            <div class="table-header flex">
+              <p>Basic</p>
+              <p class="table-price">$19/m</p>
+            </div>
+            <div class="table-details">
+              <p class="little-paragraph">
+                Go beyond email and customize your workflow
+              </p>
+              <ul class="little-paragraph">
+                <li><span class="bullet">•</span> Lorem ipsum dolor sit am</li>
+                <li><span class="bullet">•</span> Curabitur faucibus</li>
+              </ul>
+              <button class="button button-pricing">Select Plan</button>
+            </div>
+          </div>
+          <div class="pro card card-price">
+            <div class="table-discount">
+              <p>60% OFF BUSINESS CHOOSE PRO</p>
+            </div>
+            <div class="table-header flex">
+              <p>Pro</p>
+              <p class="table-price">$39/m</p>
+            </div>
+            <div class="table-details">
+              <p class="little-paragraph">
+                Go beyond email and customize your workflow
+              </p>
+              <ul class="little-paragraph">
+                <li><span class="bullet">•</span> Aenean nec finibus felis</li>
+                <li>
+                  <span class="bullet">•</span>
+                  Nuliam viverra lectus id elit feugiat, sit amet tincidunt odio
+                </li>
+                <li>
+                  <span class="bullet">•</span> Mauris auctor nulla eu sodales
+                  placerat
+                </li>
+              </ul>
+              <button class="button button-pricing">Select Plan</button>
+            </div>
+          </div>
+          <div class="premium card card-price">
+            <div class="table-header flex">
+              <p>Premium</p>
+              <p class="table-price">$59/m</p>
+            </div>
+            <div class="table-details">
+              <p class="little-paragraph">
+                Go beyond email and customize your workflow
+              </p>
+              <ul class="little-paragraph">
+                <li>
+                  <span class="bullet">•</span> Etiam velit augue, commodo nec
+                  viverra eget
+                </li>
+                <li>
+                  <span class="bullet">•</span> Vestibulum consequat quam sed
+                  lacus commodo molestie
+                </li>
+                <li>
+                  <span class="bullet">•</span>
+                  Duis felis sem, faucibus at molestie quis, laoreet quis mi.
+                </li>
+              </ul>
+              <button class="button button-pricing">Select Plan</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="testimonials grey-bg">
+      <p class="section-name">Testimonials</p>
+      <div class="carousel-container">
+        <i class="fas fa-chevron-left" id="carouselPrev"></i>
+        <i class="fas fa-chevron-right" id="carouselNext"></i>
+        <div class="carousel-slide">
+          <div>
+            <div class="carousel-screen"></div>
+            <img src="./src/carousel4.png" id="lastClone" alt="" />
+            <div class="carousel-text">
+              <h3>
+                "Donec et molestie nisl. Integer sagittis enim id nisqet et
+                pharetra. Quisque lorem mauris, efficitur et enim sed, sodales
+                vulputate neque. Donec eget ornare neque.”
+              </h3>
+              <p class="testimony-person">Alan Kalaida</p>
+              <p class="testimony-profession">Product Designer</p>
+            </div>
+          </div>
+          <div>
+            <div class="carousel-screen"></div>
+            <img src="./src/carousel1.png" alt="" />
+            <div class="carousel-text">
+              <h3>
+                "Donec et molestie nisl. Integer sagittis enim id nisqet et
+                pharetra. Quisque lorem mauris, efficitur et enim sed, sodales
+                vulputate neque. Donec eget ornare neque.”
+              </h3>
+              <p class="testimony-person">Alan Kalaida</p>
+              <p class="testimony-profession">Product Designer</p>
+            </div>
+          </div>
+          <div>
+            <div class="carousel-screen"></div>
+            <img src="./src/carousel2.png" alt="" />
+            <div class="carousel-text">
+              <h3>
+                "Donec et molestie nisl. Integer sagittis enim id nisqet et
+                pharetra. Quisque lorem mauris, efficitur et enim sed, sodales
+                vulputate neque. Donec eget ornare neque.”
+              </h3>
+              <p class="testimony-person">Alan Kalaida</p>
+              <p class="testimony-profession">Product Designer</p>
+            </div>
+          </div>
+          <div>
+            <div class="carousel-screen"></div>
+            <img src="./src/carousel3.png" alt="" />
+            <div class="carousel-text">
+              <h3>
+                "Donec et molestie nisl. Integer sagittis enim id nisqet et
+                pharetra. Quisque lorem mauris, efficitur et enim sed, sodales
+                vulputate neque. Donec eget ornare neque.”
+              </h3>
+              <p class="testimony-person">Alan Kalaida</p>
+              <p class="testimony-profession">Product Designer</p>
+            </div>
+          </div>
+          <div>
+            <div class="carousel-screen"></div>
+            <img src="./src/carousel4.png" alt="" />
+            <div class="carousel-text">
+              <h3>
+                "Donec et molestie nisl. Integer sagittis enim id nisqet et
+                pharetra. Quisque lorem mauris, efficitur et enim sed, sodales
+                vulputate neque. Donec eget ornare neque.”
+              </h3>
+              <p class="testimony-person">Alan Kalaida</p>
+              <p class="testimony-profession">Product Designer</p>
+            </div>
+          </div>
+          <div>
+            <div class="carousel-screen"></div>
+            <img src="./src/carousel1.png" id="firstClone" alt="" />
+            <div class="carousel-text">
+              <h3>
+                "Donec et molestie nisl. Integer sagittis enim id nisqet et
+                pharetra. Quisque lorem mauris, efficitur et enim sed, sodales
+                vulputate neque. Donec eget ornare neque.”
+              </h3>
+              <p class="testimony-person">Alan Kalaida</p>
+              <p class="testimony-profession">Product Designer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="whitebg">
+      <div class="container">
+        <p class="main-logo">moobox</p>
+        <p class="little-paragraph">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+          faucibus sapien bibendum.
+        </p>
+        <div class="line"></div>
+        <ul class="menu-font footer-menu flex">
+          <li>Terms</li>
+          <li>Refund Policy</li>
+          <li>License</li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+  <!-- <script
+    src="https://kit.fontawesome.com/c8291b9e23.js"
+    crossorigin="anonymous"
+  ></script> -->
+  <script src="js/app.js"></script>
+  <script src="js/crsl.js"></script>
+  <script src="js/slider.js"></script>
 </html>
