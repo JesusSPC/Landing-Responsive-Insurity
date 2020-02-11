@@ -109,8 +109,8 @@ footer {
 .articles,
 .pricing,
 .testimonials {
-  padding-bottom: 40px;
-  padding-top: 40px;
+  padding-bottom: 60px;
+  padding-top: 80px;
 }
 
 header {
@@ -326,7 +326,8 @@ header {
 }
 
 .teams .container {
-  padding: 40px;
+  padding-top: 80px;
+  padding-bottom: 40px;
   z-index: 10;
 }
 
@@ -342,7 +343,7 @@ header {
 }
 
 .articles .card {
-  box-shadow: -13px 13px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: -5px 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .card {
@@ -684,7 +685,6 @@ footer .main-logo {
     width: 130%;
     position: absolute;
     top: 5%;
-    /* left: 15%; */
     z-index: 10;
   }
 
@@ -709,12 +709,12 @@ footer .main-logo {
     width: 500px;
   }
 
-  .customers .container > div {
-    width: 500px;
-  }
-
   .customers {
     padding-bottom: 0;
+  }
+
+  .customers .container > div {
+    width: 500px;
   }
 
   .customers .s2-design {
@@ -726,18 +726,28 @@ footer .main-logo {
     top: 100%;
   }
 
-  .customers .s2-phone-move {
+  .customers .s2-phone-move-up {
     transition: 2.5s ease;
     margin-top: -100%;
+  }
+
+  .customers .s2-phone-move-down {
+    transition: 2.5s ease;
+    margin-top: 0%;
   }
 
   .customers .s2-graph {
     top: 100%;
   }
 
-  .customers .s2-graph-move {
+  .customers .s2-graph-move-up {
     transition: 2.5s ease-in-out;
     margin-top: -85%;
+  }
+
+  .customers .s2-graph-move-down {
+    transition: 2.5s ease;
+    margin-top: 0%;
   }
 
   .precision .container > div:nth-child(1) {
@@ -750,10 +760,6 @@ footer .main-logo {
 
   .learn-more {
     display: initial;
-  }
-
-  .teams {
-    box-shadow: inset 0px 50px 25px -30px rgba(0, 0, 0, 0.15);
   }
 
   .customers .container {
@@ -831,11 +837,7 @@ footer .main-logo {
   }
 
   .nav-menu li {
-    padding-right: 20px;
-  }
-
-  .nav-button {
-    border-left: 1px solid #ffffff50;
+    padding-right: 40px;
   }
 
   .nav-client-area {

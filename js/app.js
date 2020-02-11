@@ -16,20 +16,20 @@ const teamsBackground = document.querySelector(".moving-bg img");
 let speedVertical,
   speedHorizontal = 0;
 
-document.addEventListener("scroll", apply2DEffects);
+let phoneSlided = false;
 
+// Effects in header images
 header.onmousemove = function(e) {
-  let polygonX = (e.pageX * -1 / 40);
-  let polygonY = (e.pageY * -1 / 40);
+  let polygonX = (e.pageX * -1) / 60;
+  let polygonY = (e.pageY * -1) / 30;
   headerPolygon.style.transform = `translate(${polygonX}px, ${polygonY}px)`;
-  let imgX = -(e.pageX * -1 / 10);
-  let imgY = -(e.pageY * -1 / 10);
+  let imgX = -((e.pageX * -1) / 20);
+  let imgY = -((e.pageY * -1) / 40);
   headerImg.style.transform = `translate(${imgX}px, ${imgY}px)`;
 };
 
-header.addEventListener("transitionend", () => {
-  console.log("hola")
-})
+// Effects when scrolling the page
+document.addEventListener("scroll", apply2DEffects);
 
 function apply2DEffects() {
   parallaxElements.forEach(element => {
@@ -53,8 +53,23 @@ function apply2DEffects() {
     element.style.transform = `translate(${speedHorizontal}px, ${speedVertical}px)`;
   });
 
-  if (phoneSection.getBoundingClientRect().top < window.innerHeight) {
-    phone.classList.add("s2-phone-move");
-    phoneGraph.classList.add("s2-graph-move");
+  // Phone & Graph appear/dissapear when you enter/leave customers section.
+  if (
+    !phoneSlided &&
+    phoneSection.getBoundingClientRect().top < window.innerHeight
+  ) {
+    phone.classList.remove("s2-phone-move-down");
+    phoneGraph.classList.remove("s2-graph-move-down");
+    phone.classList.add("s2-phone-move-up");
+    phoneGraph.classList.add("s2-graph-move-up");
+    phoneSlided = true;
+  }
+
+  if (phoneSlided && phoneSection.getBoundingClientRect().top <= 0) {
+    phone.classList.remove("s2-phone-move-up");
+    phoneGraph.classList.remove("s2-graph-move-up");
+    phone.classList.add("s2-phone-move-down");
+    phoneGraph.classList.add("s2-graph-move-down");
+    phoneSlided = false;
   }
 }
