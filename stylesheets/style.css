@@ -164,7 +164,10 @@ header {
   font-family: "Inter-Medium";
   font-size: 2rem;
   letter-spacing: -0.05rem;
+  cursor: pointer;
+  outline: none;
   color: white;
+  transition: all .3s;
 }
 
 .button-orange {
@@ -186,7 +189,22 @@ header {
 }
 
 .button-grey {
+  position: relative;
+  display: none;
   color: var(--dark-purple);
+}
+
+.button-grey:hover {
+  background-color: var(--light-button-purple);
+  color: white;
+}
+
+.button-grey:after {
+
+}
+
+.button-grey:before {
+
 }
 
 .header-main {
@@ -341,15 +359,6 @@ header {
   top: 15%;
   left: 40%;
   z-index: 10;
-}
-
-.button-grey {
-  display: none;
-}
-
-.button-grey:hover {
-  background-color: var(--light-button-purple);
-  color: white;
 }
 
 .teams {
