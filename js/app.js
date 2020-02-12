@@ -4,7 +4,6 @@ const parallaxElements = document.querySelectorAll(".parallax");
 // Catch sections
 const header = document.querySelector("header");
 const phoneSection = document.querySelector(".customers");
-// const teamsSection = document.querySelector(".teams");
 
 // Catch elements of those sections
 const headerPolygon = document.querySelector(".header-polygon");
@@ -35,9 +34,6 @@ function apply2DEffects() {
     if (element.dataset.direction === "vertical") {
       speedVertical =
         element.dataset.speed * element.getBoundingClientRect().top;
-      // if (teamsSection.getBoundingClientRect().top < window.innerHeight) {
-      //   element.style.transform = `translateY(${speedVertical}px)`;
-      // }
     } else {
       speedVertical = 0;
     }
@@ -55,20 +51,21 @@ function apply2DEffects() {
   // Phone & Graph appear/dissapear when you enter/leave customers section.
   if (
     !phoneSlided &&
-    phoneSection.getBoundingClientRect().top < window.innerHeight
+    phoneSection.getBoundingClientRect().top < (window.innerHeight / 2 + 100) &&
+    phoneSection.getBoundingClientRect().top > 0
   ) {
+    phoneSlided = true;
     phone.classList.remove("s2-phone-move-down");
     phoneGraph.classList.remove("s2-graph-move-down");
     phone.classList.add("s2-phone-move-up");
     phoneGraph.classList.add("s2-graph-move-up");
-    phoneSlided = true;
   }
 
-  if (phoneSlided && phoneSection.getBoundingClientRect().top <= 0) {
+  if (phoneSlided && phoneSection.getBoundingClientRect().top < -100) {
+    phoneSlided = false;
     phone.classList.remove("s2-phone-move-up");
     phoneGraph.classList.remove("s2-graph-move-up");
     phone.classList.add("s2-phone-move-down");
     phoneGraph.classList.add("s2-graph-move-down");
-    phoneSlided = false;
   }
 }
